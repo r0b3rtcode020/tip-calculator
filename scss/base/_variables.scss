@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+
+/****************************************************
+ ******************   VARIABLES   *******************
+ ****************************************************/
+
+:root {
+  //Colors
+  --clr-green-200: hsl(173, 61%, 77%);
+  --clr-green-400: hsl(172, 67%, 45%);
+  --clr-green-750: hsl(183, 79%, 24%);
+  --clr-green-800: hsl(183, 85%, 21%);
+  --clr-green-900: hsl(183, 100%, 15%);
+  --clr-orange-400: hsl(13, 70%, 60%);
+  --clr-grey-50: hsl(189, 41%, 97%);
+  --clr-grey-200: hsl(185, 41%, 84%);
+  --clr-grey-300: hsl(184, 19%, 68%);
+  --clr-grey-400: hsl(184, 14%, 56%);
+  --clr-grey-500: hsl(186, 14%, 43%);
+  --clr-grey-550: hsl(180, 18%, 40%);
+  --clr-grey-600: hsl(180, 25%, 32%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-black: hsl(0, 0%, 0%);
+
+  //Typography
+  --ff-space-mono: "Space Mono", monospace;
+
+  //Font Sizes
+  --fs-48: 3rem;
+  --fs-32: 2rem;
+  --fs-24: 1.5rem;
+  --fs-20: 1.25rem;
+  --fs-16: 1rem;
+  --fs-13: 0.8125rem;
+
+  //Font Weights
+  --fw-700: 700;
+
+  //Line Heights
+  --lh-150: 1.5;
+
+  //Spacing
+  --sp-0: 0;
+  --sp-8: 0.5rem;
+  --sp-16: 1rem;
+  --sp-24: 1.5rem;
+  --sp-32: 2rem;
+  --sp-48: 3rem;
+  --sp-80: 5rem;
+  --sp-96: 6rem;
+  --sp-120: 7.5rem;
+  --sp-128: 8rem;
+  --sp-160: 10rem;
+  --sp-240: 15rem;
+  --sp-320: 20rem;
+
+  //Shadows
+  --shadow: 0 2rem 2.6875rem rgba(79, 166, 175, 0.2);
+
+  //Breakpoints
+  --bp-tablet: 48rem;
+  --bp-desktop: 80rem;
+}

@@ -1,0 +1,47 @@
+/****************************************************
+ ********************   RESET   *********************
+ ****************************************************/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-space-mono);
+  font-size: var(--fs-16);
+  font-weight: var(--fw-700);
+  line-height: var(--lh-150);
+  background-color: var(--clr-grey-200);
+  color: var(--clr-grey-500);
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+input {
+  font: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

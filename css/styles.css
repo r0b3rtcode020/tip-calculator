@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+/****************************************************
+ ******************   VARIABLES   *******************
+ ****************************************************/
+:root {
+  --clr-green-200: hsl(173, 61%, 77%);
+  --clr-green-400: hsl(172, 67%, 45%);
+  --clr-green-750: hsl(183, 79%, 24%);
+  --clr-green-800: hsl(183, 85%, 21%);
+  --clr-green-900: hsl(183, 100%, 15%);
+  --clr-orange-400: hsl(13, 70%, 60%);
+  --clr-grey-50: hsl(189, 41%, 97%);
+  --clr-grey-200: hsl(185, 41%, 84%);
+  --clr-grey-300: hsl(184, 19%, 68%);
+  --clr-grey-400: hsl(184, 14%, 56%);
+  --clr-grey-500: hsl(186, 14%, 43%);
+  --clr-grey-550: hsl(180, 18%, 40%);
+  --clr-grey-600: hsl(180, 25%, 32%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-black: hsl(0, 0%, 0%);
+  --ff-space-mono: "Space Mono", monospace;
+  --fs-48: 3rem;
+  --fs-32: 2rem;
+  --fs-24: 1.5rem;
+  --fs-20: 1.25rem;
+  --fs-16: 1rem;
+  --fs-13: 0.8125rem;
+  --fw-700: 700;
+  --lh-150: 1.5;
+  --sp-0: 0;
+  --sp-8: 0.5rem;
+  --sp-16: 1rem;
+  --sp-24: 1.5rem;
+  --sp-32: 2rem;
+  --sp-48: 3rem;
+  --sp-80: 5rem;
+  --sp-96: 6rem;
+  --sp-120: 7.5rem;
+  --sp-128: 8rem;
+  --sp-160: 10rem;
+  --sp-240: 15rem;
+  --sp-320: 20rem;
+  --shadow: 0 2rem 2.6875rem rgba(79, 166, 175, 0.2);
+  --bp-tablet: 48rem;
+  --bp-desktop: 80rem;
+}
+
+/****************************************************
+ ********************   RESET   *********************
+ ****************************************************/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-space-mono);
+  font-size: var(--fs-16);
+  font-weight: var(--fw-700);
+  line-height: var(--lh-150);
+  background-color: var(--clr-grey-200);
+  color: var(--clr-grey-500);
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+input {
+  font: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/*# sourceMappingURL=styles.css.map */
