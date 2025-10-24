@@ -94,4 +94,19 @@ input {
   border: 0;
 }
 
+/****************************************************
+ ********************   CONTAINER   *****************
+ ****************************************************/
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(var(--sp-40), 2.5rem + 48 * (100vw - 48rem) / 672, var(--sp-88));
+  padding-block-start: var(--sp-48);
+  padding-block-end: clamp(0rem, 0rem + 80 * (100vw - 30rem) / 288, 5rem);
+  padding-inline: clamp(0rem, 0rem + 260 * (100vw - 30rem) / 960, 16.25rem);
+  min-height: 100dvh;
+}
+
 /*# sourceMappingURL=styles.css.map */
