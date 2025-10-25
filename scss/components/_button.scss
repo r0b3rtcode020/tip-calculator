@@ -1,0 +1,39 @@
+/****************************************************
+ ********************   BUTTONS   *******************
+ ****************************************************/
+
+.btn {
+  width: 100%;
+  padding: var(--sp-8) var(--sp-16);
+  text-transform: uppercase;
+  cursor: pointer;
+
+  @media (hover: hover) and (pointer: fine) {
+    &:not(:disabled):not(.active):hover {
+      background-color: var(--clr-green-200);
+      color: var(--clr-green-900);
+    }
+  }
+
+  &:focus-visible {
+    outline: 0.125rem solid hsl(from var(--clr-green-400) h s l);
+    outline-offset: 0.125rem;
+  }
+
+  &:disabled {
+    background-color: var(--clr-green-750);
+    color: var(--clr-green-800);
+    cursor: not-allowed;
+  }
+
+  &.active,
+  &--reset {
+    background-color: var(--clr-green-400);
+    color: var(--clr-green-900);
+  }
+
+  &--tip {
+    background-color: var(--clr-green-900);
+    color: var(--clr-white);
+  }
+}
