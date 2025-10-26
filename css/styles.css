@@ -143,6 +143,27 @@ input {
   color: var(--clr-white);
 }
 
+/****************************************************
+ *********************   LABEL   ********************
+ ****************************************************/
+.form-group__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form-group__header .form-label {
+  font-size: var(--fs-16);
+  color: var(--clr-grey-500);
+}
+.form-group__header .error-message {
+  font-size: var(--fs-13);
+  color: var(--clr-orange-400);
+  display: none;
+}
+
+/****************************************************
+ *********************   INPUT   ********************
+ ****************************************************/
 .input-field {
   width: 100%;
   padding: var(--sp-8) var(--sp-16);
@@ -150,13 +171,12 @@ input {
   background-color: var(--clr-grey-50);
   color: var(--clr-green-900);
   text-align: right;
+  appearance: textfield;
+  -moz-appearance: textfield;
 }
 .input-field::-webkit-inner-spin-button, .input-field::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
-}
-.input-field {
-  -moz-appearance: textfield;
 }
 .input-field.tip-custom {
   text-align: center;

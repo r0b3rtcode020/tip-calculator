@@ -1,0 +1,20 @@
+/****************************************************
+ *********************   LABEL   ********************
+ ****************************************************/
+
+.form-group__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .form-label {
+    font-size: var(--fs-16);
+    color: var(--clr-grey-500);
+  }
+
+  .error-message {
+    font-size: var(--fs-13);
+    color: var(--clr-orange-400);
+    display: none;
+  }
+}
