@@ -1,0 +1,40 @@
+@use "../base/mixins" as *;
+
+.input-field {
+  width: 100%;
+  padding: var(--sp-8) var(--sp-16);
+  border-radius: var(--sp-8);
+  background-color: var(--clr-grey-50);
+  color: var(--clr-green-900);
+  text-align: right;
+  @include no-spinner;
+
+  &.tip-custom {
+    text-align: center;
+  }
+
+  &::placeholder {
+    color: var(--clr-grey-300);
+  }
+
+  &:focus-visible {
+    outline: 0.125rem solid hsl(from var(--clr-green-400) h s l);
+    outline-offset: 0.125rem;
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    outline: 0.125rem solid hsl(from var(--clr-orange-400) h s l);
+    outline-offset: 0.125rem;
+  }
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  .input-icon {
+    position: absolute;
+    left: var(--sp-16);
+  }
+}

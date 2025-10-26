@@ -9,3 +9,15 @@
     }
   }
 }
+
+@mixin no-spinner {
+  // Chrome, Safari, Edge, Opera
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  // Firefox
+  -moz-appearance: textfield;
+}
