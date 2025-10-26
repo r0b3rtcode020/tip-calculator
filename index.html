@@ -20,7 +20,10 @@
         <div class="calculator__form">
           <!-- Bill Amount -->
           <div class="form-group">
-            <label for="bill" class="form-label">Bill</label>
+            <div class="form-group__header">
+              <label for="bill" class="form-label">Bill</label>
+              <span id="bill-error" class="error-message">Can't be negative</span>
+            </div>
             <div class="input-wrapper">
               <img src="./images/icon-dollar.svg" alt="" class="input-icon" aria-hidden="true" />
               <input
@@ -37,7 +40,10 @@
 
           <!-- Tip Selection -->
           <div class="form-group">
-            <label class="form-label">Select Tip %</label>
+            <div class="form-group__header">
+              <label for="tip-custom" class="form-label">Select Tip %</label>
+              <span id="tip-custom-error" class="error-message">Can't be negative</span>
+            </div>
             <div class="tip-options">
               <button type="button" class="btn btn--tip" data-tip="5">5%</button>
               <button type="button" class="btn btn--tip" data-tip="10">10%</button>
