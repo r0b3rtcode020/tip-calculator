@@ -203,4 +203,18 @@ input {
   left: var(--sp-16);
 }
 
+/****************************************************
+ *******************   TIP GRID   *******************
+ ****************************************************/
+.tip-options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--sp-16);
+}
+@media (width >= 48rem) {
+  .tip-options {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */

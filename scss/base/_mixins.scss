@@ -1,10 +1,10 @@
 @mixin breakpoint($point) {
   @if $point == "tablet" {
-    @media (width >= var(--bp-tablet)) {
+    @media (width >= 48rem) {
       @content;
     }
   } @else if $point == "desktop" {
-    @media (width >= var(--bp-desktop)) {
+    @media (width >= 80rem) {
       @content;
     }
   }
