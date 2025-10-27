@@ -110,6 +110,30 @@ input {
 }
 
 /****************************************************
+ ******************   FORM GROUP   ******************
+ ****************************************************/
+.calculator__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-32);
+}
+@media (width >= 48rem) {
+  .calculator__form {
+    gap: var(--sp-24);
+  }
+}
+@media (width >= 80rem) {
+  .calculator__form {
+    gap: var(--sp-40);
+  }
+}
+.calculator__form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-8);
+}
+
+/****************************************************
  ********************   BUTTONS   *******************
  ****************************************************/
 .btn {

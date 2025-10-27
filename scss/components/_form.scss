@@ -1,0 +1,25 @@
+@use "../base/mixins" as *;
+
+/****************************************************
+ ******************   FORM GROUP   ******************
+ ****************************************************/
+
+.calculator__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-32);
+
+  @include breakpoint("tablet") {
+    gap: var(--sp-24);
+  }
+
+  @include breakpoint("desktop") {
+    gap: var(--sp-40);
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-8);
+  }
+}
