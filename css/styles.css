@@ -241,4 +241,66 @@ input {
   }
 }
 
+/****************************************************
+ *******************   RESULTS   ********************
+ ****************************************************/
+.calculator__results {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-32);
+  padding-block: var(--sp-24);
+  padding-inline: var(--sp-24);
+  border-radius: var(--sp-16);
+  background-color: var(--clr-green-900);
+}
+@media (width >= 48rem) {
+  .calculator__results {
+    gap: var(--sp-16);
+    padding-inline: var(--sp-32);
+  }
+}
+@media (width >= 80rem) {
+  .calculator__results {
+    gap: var(--sp-128);
+  }
+}
+.calculator__results .results {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-24);
+}
+@media (width >= 48rem) {
+  .calculator__results .results {
+    gap: var(--sp-8);
+  }
+}
+@media (width >= 80rem) {
+  .calculator__results .results {
+    gap: var(--sp-24);
+  }
+}
+.calculator__results .results .result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.calculator__results .results .result__info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-0);
+}
+.calculator__results .results .result__info .result__label {
+  font-size: var(--fs-16);
+  color: var(--clr-white);
+}
+.calculator__results .results .result__info .result__person {
+  font-size: var(--fs-13);
+  color: var(--clr-grey-400);
+}
+.calculator__results .results .result__amount {
+  font-size: clamp(var(--fs-32), 7vw, var(--fs-48));
+  letter-spacing: -0.0625rem;
+  color: var(--clr-green-400);
+}
+
 /*# sourceMappingURL=styles.css.map */

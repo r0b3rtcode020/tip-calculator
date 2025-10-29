@@ -1,0 +1,62 @@
+@use "../base/mixins" as *;
+
+/****************************************************
+ *******************   RESULTS   ********************
+ ****************************************************/
+
+.calculator__results {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-32);
+  padding-block: var(--sp-24);
+  padding-inline: var(--sp-24);
+  border-radius: var(--sp-16);
+  background-color: var(--clr-green-900);
+  @include breakpoint("tablet") {
+    gap: var(--sp-16);
+    padding-inline: var(--sp-32);
+  }
+  @include breakpoint("desktop") {
+    gap: var(--sp-128);
+  }
+
+  .results {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-24);
+    @include breakpoint("tablet") {
+      gap: var(--sp-8);
+    }
+    @include breakpoint("desktop") {
+      gap: var(--sp-24);
+    }
+
+    .result {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &__info {
+        display: flex;
+        flex-direction: column;
+        gap: var(--sp-0);
+
+        .result__label {
+          font-size: var(--fs-16);
+          color: var(--clr-white);
+        }
+
+        .result__person {
+          font-size: var(--fs-13);
+          color: var(--clr-grey-400);
+        }
+      }
+
+      &__amount {
+        font-size: clamp(var(--fs-32), 7vw, var(--fs-48));
+        letter-spacing: -0.0625rem;
+        color: var(--clr-green-400);
+      }
+    }
+  }
+}
