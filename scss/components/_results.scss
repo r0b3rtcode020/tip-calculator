@@ -12,6 +12,7 @@
   padding-inline: var(--sp-24);
   border-radius: var(--sp-16);
   background-color: var(--clr-green-900);
+  flex: 1;
   @include breakpoint("tablet") {
     gap: var(--sp-16);
     padding-inline: var(--sp-32);

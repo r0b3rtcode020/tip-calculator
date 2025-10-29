@@ -8,11 +8,10 @@
   display: flex;
   flex-direction: column;
   gap: var(--sp-32);
-
+  flex: 1;
   @include breakpoint("tablet") {
     gap: var(--sp-24);
   }
-
   @include breakpoint("desktop") {
     gap: var(--sp-40);
   }

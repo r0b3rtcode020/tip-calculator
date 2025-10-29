@@ -1,0 +1,29 @@
+@use "../base/mixins" as *;
+
+/****************************************************
+ ******************   CALCULATOR   ******************
+ ****************************************************/
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-32);
+  padding-block: var(--sp-32);
+  padding-inline: var(--sp-24);
+  border-top-left-radius: var(--sp-24);
+  border-top-right-radius: var(--sp-24);
+  background-color: var(--clr-white);
+  box-shadow: var(--shadow);
+  @include breakpoint("tablet") {
+    gap: var(--sp-40);
+    padding-block: var(--sp-48);
+    padding-inline: var(--sp-80);
+    border-radius: var(--sp-24);
+  }
+  @include breakpoint("desktop") {
+    flex-direction: row;
+    gap: var(--sp-48);
+    padding-block: var(--sp-32);
+    padding-inline: var(--sp-32);
+  }
+}
