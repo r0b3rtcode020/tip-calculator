@@ -116,6 +116,7 @@ input {
   display: flex;
   flex-direction: column;
   gap: var(--sp-32);
+  inline-size: 100%;
   padding-block: var(--sp-32);
   padding-inline: var(--sp-24);
   border-top-left-radius: var(--sp-24);
