@@ -12,7 +12,7 @@
     calc(2.5rem + (88 - 40) * ((100vw - 48rem) / (1440 - 768))),
     var(--sp-88)
   );
-  padding-block-start: var(--sp-48);
+  padding-block-start: clamp(var(--sp-48), 7vw, var(--sp-80));
   padding-block-end: clamp(0rem, calc(0rem + (80 - 0) * ((100vw - 30rem) / (768 - 480))), 5rem);
   padding-inline: clamp(0rem, calc(0rem + (260 - 0) * ((100vw - 30rem) / (1440 - 480))), 16.25rem);
   min-height: 100dvh;
