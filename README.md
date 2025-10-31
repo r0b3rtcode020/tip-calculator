@@ -11,6 +11,7 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
   - Variables
   - Fluid typography/spacing using clamp()
   - Media queries
+- SCSS (Preprocessor)
 - Flexbox
 - Grid
 - Mobile-first workflow
@@ -18,6 +19,9 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
 - JavaScript
   - DOM manipulation
   - Event listeners
+  - Input validation
+  - State management
+  - Refactoring
 
 ## Live site
 
