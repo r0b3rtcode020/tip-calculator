@@ -27,7 +27,7 @@ const DOM = {
 // ============================================
 const DEFAULTS = {
   TIP_PERCENT: 0,
-  PEOPLE_COUNT: 1,
+  PEOPLE_COUNT: 0,
   CURRENCY_DISPLAY: "$0.00",
 };
 
@@ -230,7 +230,7 @@ const handleReset = () => {
   // Reset inputs
   DOM.inputs.bill.value = "";
   DOM.inputs.tipCustom.value = "";
-  DOM.inputs.people.value = String(DEFAULTS.PEOPLE_COUNT);
+  DOM.inputs.people.value = "";
 
   // Reset state
   state.bill = null;
@@ -251,6 +251,11 @@ const initEventListeners = () => {
   DOM.inputs.bill.addEventListener("input", handleBillInput);
   DOM.inputs.tipCustom.addEventListener("input", handleTipCustomInput);
   DOM.inputs.people.addEventListener("input", handlePeopleInput);
+
+  // Focus listeners to select input value
+  Object.values(DOM.inputs).forEach(input => {
+    input.addEventListener("focus", () => input.select());
+  });
 
   // Tip button listeners
   DOM.buttons.tips.forEach(button => {
